@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Base object = new Sub();
         ParamSub param = new ParamSub();
+        //Object对象是在运行时才能决定的（多态特性），而参数param是在编译时就能决定的。
+        //这就是所谓的：参数静态绑定（方法的参数），接收者动态绑定(方法的调用者)
         object.print(param);
     }
 }
